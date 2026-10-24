@@ -593,3 +593,16 @@
             Co-authored-by: Curle <curle@gemwire.uk>
             Co-authored-by: sciwhiz12 <arnoldnunag12@gmail.com>
 
+
+
+2026-10-23 16:20 — Introduce native Forge 1.7.10 and 1.12.2 ports
+
+- Register the original twenty foods, guardian ingredient and four-portion Guardian Soup feast using Farmer's Delight Legacy 1.0.2 food, recipe and serving infrastructure.
+- Preserve knife-based squid and elder-guardian loot, normal guardian drops, exact pufferfish metadata processing, food properties, cooking quantities and serving containers.
+- Defer absent aquatic items and dependent recipe chains, including all guardian acquisition on 1.7.10, rather than substituting unrelated ingredients or mobs. Preserve the original requirements for future UAB integration.
+- Compile native Forge code independently and preserve the original modern sources, assets and existing license notices.
+
+2026-10-23 22:14 — Add optional UAB compatibility on Forge 1.7.10
+
+- Support UAB normal guardian ingredients, knife-qualified elder slabs and glow-squid tentacles. Reuse original cutting/cooking recipes and vanilla fish metadata; preserve UAB drops, use enabled UAB aquatic ingredients when provided, and defer missing prerequisites.
+- Follow the shared compatibility settings in farmersdelight.cfg, existing addon settings and UAB feature availability. Keep UAB optional and preserve saved registrations and other Minecraft implementations.

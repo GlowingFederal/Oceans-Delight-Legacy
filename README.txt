@@ -1,46 +1,19 @@
+Ocean's Delight Legacy
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+Native ocean cooking for Minecraft Forge 1.7.10 and 1.12.2, requiring Farmer's Delight Legacy 1.0.2 or newer and its normal Mixin bootstrap. Each target is an independent optional addon.
 
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
+Use a Farmer's Delight knife on squid to obtain tentacles, then use the Cutting Board, Cooking Pot and grill for seafood dishes. Pufferfish retain their exact legacy fish metadata and provide fugu slices. On 1.12.2, guardians provide the guardian ingredient and knife kills on elder guardians provide slabs. Guardian Soup is a four-serving feast with a leftover bowl.
 
-Setup Process:
-==============================
+The original twenty foods, guardian ingredient and soup block keep their identities. Kelp, seagrass, sea pickles and honey recipes remain deferred. Stuffed-cod cooking is also deferred while its kelp-dependent input has no acquisition. Guardians do not exist in vanilla 1.7.10, so their whole recipe chain remains deferred there. Future UAB integration must provide the intended prerequisites; no substitute recipes or extra aquatic mobs are added.
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+config/oceansdelight.cfg exposes general.mobDrops (default true). Other gameplay values follow the original source. Modern conditional recipe wrappers requiring Farmer's Delight are resolved through the mandatory legacy dependency. Smoker food paths use the native furnace and campfire food paths use FD grilling.
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `gradlew genEclipseRuns` (`./gradlew genEclipseRuns` if you are on Mac/Linux)
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
+Build
 
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `gradlew genIntellijRuns` (`./gradlew genIntellijRuns` if you are on Mac/Linux)
-4. Refresh the Gradle Project in IDEA if required.
+Build the adjacent FarmersDelight-Legacy checkout first. Run gradlew.bat buildAll using JDK 21 for the coordinator/1.12.2 and JDK 25 for the existing GTNH 1.7.10 toolchain; the game uses Java 8. JAVA21_HOME and JAVA25_HOME are supported by scripts/run-gradle.ps1. Development FD JARs are compile-only and are not bundled.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Native source: versions/<minecraft>/src. Original source: src/. Original modern build: reference/. Shared food definitions: common/. Original recipes, tags, textures, models and translations are assembled during resource processing.
 
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
+Distributions: build/release/oceansdelight-1.0.0+mc1.7.10.jar and oceansdelight-1.0.0+mc1.12.2.jar.
 
-Additional Resources: 
-=========================
-Community Documentation: https://mcforge.readthedocs.io/en/latest/gettingstarted/  
-LexManos' Install Video: https://www.youtube.com/watch?v=8VEdtQLuLO0  
-Forge Forum: https://forums.minecraftforge.net/  
-Forge Discord: https://discord.gg/UvedJ9m  
+Original author: Scouter456. Existing LICENSE.txt and credits are preserved. The original repository's MIT metadata conflicts with its LGPL license text; publication and license claims require clarification from the original rights holder. Local builds do not resolve that discrepancy.

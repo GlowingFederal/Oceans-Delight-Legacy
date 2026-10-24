@@ -1,0 +1,123 @@
+[
+  {
+    "id": "tentacles",
+    "nutrition": 3,
+    "saturation": 0.3,
+    "effect": "blindness",
+    "duration": 600,
+    "amplifier": 0,
+    "chance": 1.0
+  },
+  {
+    "id": "cut_tentacles",
+    "nutrition": 1,
+    "saturation": 0.1
+  },
+  {
+    "id": "squid_rings",
+    "nutrition": 5,
+    "saturation": 0.5
+  },
+  {
+    "id": "tentacle_on_a_stick",
+    "nutrition": 3,
+    "saturation": 0.3
+  },
+  {
+    "id": "baked_tentacle_on_a_stick",
+    "nutrition": 6,
+    "saturation": 0.6
+  },
+  {
+    "id": "guardian_tail",
+    "nutrition": 2,
+    "saturation": 0.2
+  },
+  {
+    "id": "cooked_guardian_tail",
+    "nutrition": 6,
+    "saturation": 0.4
+  },
+  {
+    "id": "bowl_of_guardian_soup",
+    "nutrition": 15,
+    "saturation": 0.8,
+    "effect": "comfort",
+    "duration": 3600,
+    "amplifier": 0,
+    "chance": 1.0,
+    "container": "minecraft:bowl"
+  },
+  {
+    "id": "elder_guardian_slab",
+    "nutrition": 9,
+    "saturation": 0.4
+  },
+  {
+    "id": "elder_guardian_slice",
+    "nutrition": 1,
+    "saturation": 0.1,
+    "effect": "mining_fatigue",
+    "duration": 3000,
+    "amplifier": 0,
+    "chance": 0.5
+  },
+  {
+    "id": "cooked_elder_guardian_slice",
+    "nutrition": 3,
+    "saturation": 0.3,
+    "fast": true
+  },
+  {
+    "id": "elder_guardian_roll",
+    "nutrition": 7,
+    "saturation": 0.6
+  },
+  {
+    "id": "cabbage_wrapped_elder_guardian",
+    "nutrition": 15,
+    "saturation": 1.0,
+    "effect": "comfort",
+    "duration": 600,
+    "amplifier": 0,
+    "chance": 1.0
+  },
+  {
+    "id": "braised_sea_pickle",
+    "nutrition": 8,
+    "saturation": 0.5
+  },
+  {
+    "id": "stuffed_cod",
+    "nutrition": 3,
+    "saturation": 0.2
+  },
+  {
+    "id": "cooked_stuffed_cod",
+    "nutrition": 6,
+    "saturation": 0.8
+  },
+  {
+    "id": "honey_fried_kelp",
+    "nutrition": 4,
+    "saturation": 0.1,
+    "fast": true,
+    "alwaysEat": true
+  },
+  {
+    "id": "seagrass_salad",
+    "nutrition": 2,
+    "saturation": 0.4
+  },
+  {
+    "id": "fugu_slice",
+    "nutrition": 1,
+    "saturation": 0.1,
+    "fast": true
+  },
+  {
+    "id": "fugu_roll",
+    "nutrition": 7,
+    "saturation": 0.6
+  }
+]

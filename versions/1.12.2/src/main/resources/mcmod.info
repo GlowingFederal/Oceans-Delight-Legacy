@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "oceansdelight",
+    "name": "Ocean's Delight Legacy",
+    "description": "Ocean food and preparation for Farmer's Delight Legacy.",
+    "version": "${modVersion}",
+    "mcversion": "${minecraftTarget}",
+    "authorList": [
+      "Scouter456"
+    ],
+    "dependencies": [
+      "farmersdelight"
+    ]
+  }
+]
