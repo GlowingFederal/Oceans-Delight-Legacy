@@ -4,7 +4,7 @@ public final class Acquisition {
   net.minecraft.entity.EntityLivingBase entity=event.getEntityLiving();
   if(entity.world.isRemote || !OceansDelight.drops) return;
   net.minecraft.entity.Entity killer=event.getSource().getTrueSource();
-  boolean knife=killer instanceof net.minecraft.entity.EntityLivingBase && vectorwing.farmersdelight.legacy.Ingredients.isKnife(((net.minecraft.entity.EntityLivingBase)killer).getHeldItemMainhand());
+  boolean knife=killer instanceof net.minecraft.entity.EntityLivingBase && com.scouter.oceansdelight.legacy.compat.Delight.integration.knife(((net.minecraft.entity.EntityLivingBase)killer).getHeldItemMainhand());
   String id=null;
   if(entity instanceof net.minecraft.entity.passive.EntitySquid && knife) id="tentacles";
   if(entity instanceof net.minecraft.entity.monster.EntityElderGuardian) { if(knife) id="elder_guardian_slab"; } else if(entity instanceof net.minecraft.entity.monster.EntityGuardian) id="guardian";

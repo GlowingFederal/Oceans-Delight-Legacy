@@ -1,0 +1,41 @@
+{
+  "forge:crops/onion": {
+    "replace": false,
+    "values": [
+      "farmersdelight:onion"
+    ]
+  },
+  "forge:crops/tomato": {
+    "replace": false,
+    "values": [
+      "farmersdelight:tomato"
+    ]
+  },
+  "forge:eggs": {
+    "values": [
+      "minecraft:egg"
+    ]
+  },
+  "forge:salad_ingredients/cabbage": {
+    "replace": false,
+    "values": [
+      "farmersdelight:cabbage",
+      "farmersdelight:cabbage_leaf"
+    ]
+  },
+  "forge:tools/knives": {
+    "replace": false,
+    "values": [
+      "farmersdelight:flint_knife",
+      "farmersdelight:iron_knife",
+      "farmersdelight:diamond_knife",
+      "farmersdelight:golden_knife",
+      "farmersdelight:netherite_knife"
+    ]
+  },
+  "forge:dough": {
+    "values": [
+      "farmersdelight:wheat_dough"
+    ]
+  }
+}
