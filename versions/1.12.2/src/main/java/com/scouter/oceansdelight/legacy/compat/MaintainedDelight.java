@@ -17,10 +17,9 @@ public final class MaintainedDelight implements DelightIntegration {
  public void init() {
   SourceRecipes.addCatalog("oceansdelight",OceansDelight.class,"/oceansdelight/source_recipes.json");
   SourceTags.addCatalog(OceansDelight.class,"/oceansdelight/source_tags.json");
-  for(java.util.Map.Entry<String,JsonObject> entry:new java.util.LinkedHashMap<String,JsonObject>(SourceRecipes.all()).entrySet()) {
-   if(entry.getKey().startsWith("oceansdelight:") && entry.getValue().toString().contains("\"oceansdelight:stuffed_cod\""))
-    SourceRecipes.defer(entry.getKey(),"Unavailable upstream acquisition: oceansdelight:stuffed_cod");
-  }
+  java.util.List<String> roots=new java.util.ArrayList<String>();
+  if(OceansDelight.drops) roots.addAll(java.util.Arrays.asList("oceansdelight:tentacles","oceansdelight:guardian","oceansdelight:elder_guardian_slab"));
+  AddonRecipes.register("oceansdelight",roots.toArray(new String[roots.size()]));
  }
  public void postInit() {}
  public Block guardianSoup() { return new com.scouter.oceansdelight.legacy.GuardianSoup(); }

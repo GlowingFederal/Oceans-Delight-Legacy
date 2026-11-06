@@ -31,7 +31,7 @@ public final class OceansDelight {
   SourceRecipes.addCatalog("oceansdelight",OceansDelight.class,"/oceansdelight/source_recipes.json");
   vectorwing.farmersdelight.legacy.SourceTags.addCatalog(OceansDelight.class,"/oceansdelight/source_tags.json");
   java.util.List<String> roots=new java.util.ArrayList<String>();
-  roots.add("oceansdelight:tentacles");
+  if(drops) roots.add("oceansdelight:tentacles");
   if(drops && vectorwing.farmersdelight.legacy.UABCompatibility.mob("Guardian")) {
    roots.add("oceansdelight:guardian");roots.add("oceansdelight:elder_guardian_slab");
   }

@@ -618,3 +618,8 @@
 
 - Update addon metadata and release distributions to 1.0.1 for Forge 1.7.10 and 1.12.2.
 - Track version inputs when generating resources so internal mod metadata stays aligned with the release filename.
+
+2026-11-02 01:08 — Restore feature-gated UAB food chains
+
+- Remove the unconditional 1.12.2 stuffed-cod deferral and use real shared acquisition checks. Respect disabled addon drops when determining tentacle and guardian ingredient availability on both targets.
+- Document optional core scripting methods for the native pot, cutting and grilling catalogs, retaining the existing alternative 1.12.2 integration.
