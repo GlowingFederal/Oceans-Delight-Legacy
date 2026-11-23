@@ -23,7 +23,7 @@ public final class OceansDelight {
   try(java.io.InputStreamReader reader=new java.io.InputStreamReader(OceansDelight.class.getResourceAsStream("/oceansdelight/foods.json"),java.nio.charset.StandardCharsets.UTF_8)) { foods=new com.google.gson.Gson().fromJson(reader,JsonObject[].class); }
   catch(java.io.IOException e) { throw new IllegalStateException("Cannot load Ocean food contract",e); }
   for(JsonObject food:foods) add(food.get("id").getAsString(),Delight.integration.food(food));
-  add("guardian",new Item());soup=Delight.integration.guardianSoup();soup.setRegistryName("oceansdelight","guardian_soup");GameRegistry.findRegistry(Block.class).register(soup);add("guardian_soup",new ItemBlock(soup));
+  add("guardian",new Item());soup=Delight.integration.guardianSoup();soup.setTranslationKey("oceansdelight.guardian_soup");soup.setRegistryName("oceansdelight","guardian_soup");GameRegistry.findRegistry(Block.class).register(soup);add("guardian_soup",new ItemBlock(soup));
   net.minecraftforge.common.MinecraftForge.EVENT_BUS.register(new Acquisition());proxy.preInit();
  }
  @Mod.EventHandler public void init(FMLInitializationEvent event) { Delight.integration.init(); }

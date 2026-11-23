@@ -623,3 +623,7 @@
 
 - Remove the unconditional 1.12.2 stuffed-cod deferral and use real shared acquisition checks. Respect disabled addon drops when determining tentacle and guardian ingredient availability on both targets.
 - Document optional core scripting methods for the native pot, cutting and grilling catalogs, retaining the existing alternative 1.12.2 integration.
+
+2026-11-12 14:05 — Increment patch version for release packaging
+
+- Advance the mod patch version by 0.0.1 and refresh matching native artifact and mod metadata versions.
